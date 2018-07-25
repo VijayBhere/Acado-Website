@@ -63,6 +63,12 @@ section{
 	position: relative;
 }
 
+.menu-icon{
+	padding: 0 20px;
+    color: #e53935;
+    font-size: 20px;
+}
+
 .main-nav.fixed-top{
 	box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.1);
     padding: 0;
@@ -106,7 +112,6 @@ a.brand:hover{
 
 .nav-bar > .menu-bar{
 	list-style: none;
-	display: flex;
 	flex-wrap: wrap;
 	padding: 0;
 	margin: 0;
@@ -125,7 +130,7 @@ a.brand:hover{
 }
 
 .button{
-	line-height: 30px !important;
+	line-height: 30px;
     padding: 8px 15px;
     border-radius: 5px;
 	background-color: #e53935;
@@ -320,7 +325,12 @@ footer{
     width: 50%;
     right: 0;
     margin: 80px 0;
-    background-image: url(../img/app-home-screen.png);
+	background-image: url(../img/app-home-screen.png);
+	display: none;
+}
+
+header .content{
+	width: 100vw;
 }
 
 @media (min-width: 374px){
@@ -349,8 +359,12 @@ footer{
 }
 
 @media (min-width: 718px){
-	.content{
+	header .content, .content{
 		width: 680px;
+	}
+
+	.nav-bar > .menu-bar{
+		display: flex;
 	}
 
 	.hero .content{
@@ -369,10 +383,14 @@ footer{
 	.hero h2{
 		width: 50%;
 	}
+
+	.menu-icon{
+		display: none;
+	}
 }
 
 @media (min-width: 1024px){
-	.content{
+	header .content, .content{
 		width: 868px;
 	}
 
@@ -408,13 +426,13 @@ footer{
 }
 
 @media (min-width: 1292px){
-	.content{
+	header .content, .content{
 		width: 1016px;
 	}
 }
 
 @media (min-width: 1400px){
-	.content{
+	header .content, .content{
 		width: 1200px;
 	}
 }
