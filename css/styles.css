@@ -1,0 +1,420 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+}
+
+p{
+	color: #6d6d6d;
+}
+
+p.small-margin{
+	margin-bottom: 10px !important;
+}
+
+p.no-margin{
+	margin-bottom: 0 !important;
+}
+
+h1, h2, h3, h4, h5, h6{
+	margin-top: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+
+section{
+	border-top: 1px solid #ddd;
+}
+
+.content{
+	padding: 80px 0;
+	margin: auto;
+	width: 276px;
+}
+
+.main-nav{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 80px;
+	padding-top: 10px;
+	background: transparent;
+	transition: all 0.2s ease-in-out;
+	z-index: 100;
+}
+
+.main-nav .content{
+	padding: 0;
+}
+
+.main-nav .nav-bar {
+	height: 70px;
+	display: flex;
+	flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0;
+	position: relative;
+}
+
+.main-nav.fixed-top{
+	box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.1);
+    padding: 0;
+	height: 70px;
+	background-color: #c1a8a8;
+}
+
+.brand{
+	display: flex;
+	align-items: center;
+	color: #e53935 !important;
+	cursor: pointer;
+}
+
+.nav-bar .brand{
+	height: 70px;
+	padding-left: 10px;
+	margin-right: 20px;
+}
+
+a.brand:hover{
+	text-decoration: none;
+}
+
+.brand img{
+	margin-right: 20px;
+	width: 40px;
+	height: 40px;
+	margin-right: 10px;
+	width: 35px;
+	height: 35px;
+}
+
+.brand span{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 25px;
+	font-weight: bold;
+	color: #e53935 !important;
+	font-size: 22px;
+}
+
+.nav-bar > .menu-bar{
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	display: none;
+}
+
+.menu-bar li{
+	padding: 0 10px;
+}
+
+.menu-bar li > a{
+	line-height: 70px;
+	text-decoration: none;
+	color: white;
+}
+
+.button{
+	line-height: 30px !important;
+    padding: 8px 15px;
+    border-radius: 5px;
+	background-color: #e53935;
+	color: #ffffff !important;
+	box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.4);
+}
+
+.button.large{
+	padding: 10px 40px;
+	font-size: 16px;
+	box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.hero{
+	display: block;
+	position: relative;
+	min-height: 600px;
+	padding: 80px 0;
+	background-color: #c1a8a8;
+	z-index: 1;
+	color: white;
+}
+
+section.hero{
+	border: none;
+}
+
+.hero .content{
+	padding: 30px 0;
+	text-align: center;
+}
+
+.hero .button-bar{
+	margin-top: 40px;
+}
+
+.button-bar .button{
+	margin-right: 0px;
+}
+
+.hero h2{
+	margin: 0;
+	margin-bottom: 20px;
+	width: 50%;
+	font-size: 35px;
+	width: 100%;
+	font-size: 25px;
+}
+
+.hero p{
+	font-size: 18px;
+	font-family: 'Open Sans', sans-serif;
+	width: 50%;
+	color: white;
+	font-size: 15px;
+	width: 100%;
+}
+
+.hero-app-screen{
+	max-width: 200px;
+}
+
+.grid-row{
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -10px;
+	margin-right: -10px;
+	display: block;
+}
+
+.grid-row.reverse{
+	flex-direction: row-reverse;
+}
+
+.grid-row-space-low{
+	margin-bottom: -60px;
+}
+
+.grid-col{
+	flex: 0 1 auto;
+	padding: 0 10px;
+	width: 25%;
+	margin-bottom: 60px;
+	width: 100%;
+	text-align: center;
+}
+
+.overview-item{
+	text-align: center !important;
+}
+
+.overview-item > i{
+	font-size: 50px;
+	margin-bottom: 15px;
+	color: #e53935;
+}
+
+.overview-item > h6{
+	font-size: 16px;
+	font-weight: 900;
+	margin: 20px auto 10px;
+}
+
+.overview-item.device-icon .desktop{
+	position: relative;
+	top: -15px;
+    right: -15px;
+}
+
+.overview-item.device-icon .mobile{
+	position: relative;
+    background-color: white;
+}
+
+.overview-item.device-icon .tab{
+	position: relative;
+    left: -15px;
+    top: -15px;
+    z-index: -1;
+}
+
+.link-emphasized{
+	font-weight: bold;
+}
+
+.copy-content{
+	width: 50%;
+	width: 100%;
+}
+
+.copy-content h2{
+	margin-bottom: 20px;
+}
+
+.copy-content h4{
+	margin-bottom: 10px;
+	font-weight: 700;
+}
+
+.copy-content p{
+	margin-bottom: 20px;
+}
+
+.store-icon{
+    display: inline-block;
+}
+
+.store-icon img{
+	width: 170px;
+	width: 156px;
+}
+
+.store-icon.apple img{
+	width: 136px;
+	width: 125px;
+}
+
+.centered{
+	text-align: center;
+}
+
+footer{
+	background-color: #252525;
+}
+
+.footer-content{
+	padding: 60px 0;
+}
+
+.footer-content h5{
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-content *{
+	color: #bbb !important;
+}
+
+.footer-content .brand{
+	margin-bottom: 5px;
+	justify-content: center;
+}
+
+.hero .content::before{
+	content:'';
+}
+
+.hero .content-image{
+	position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    right: 0;
+    margin: 80px 0;
+    background-image: url(../img/app-home-screen.png);
+}
+
+@media (min-width: 374px){
+	.content{
+		width: 324px;
+	}
+}
+
+@media (min-width: 480px){
+	.content{
+		width: 424px;
+	}
+
+	.grid-row{
+		display: flex;
+	}
+
+	.grid-col{
+		width: 50%;
+		text-align: left;
+	}
+
+	.footer-content .brand{
+		justify-content: left;
+	}
+}
+
+@media (min-width: 718px){
+	.content{
+		width: 680px;
+	}
+
+	.hero .content{
+		padding: 60px 0;
+		text-align: left;
+	}
+
+	.copy-content{
+		width: 50%;
+	}
+
+	.hero p{
+		width: 50%;
+	}
+
+	.hero h2{
+		width: 50%;
+	}
+}
+
+@media (min-width: 1024px){
+	.content{
+		width: 868px;
+	}
+
+	.hero p{
+		font-size: 18px;
+	}
+
+	.hero h2{
+		font-size: 35px;
+	}
+
+	.grid-col{
+		width: 25%;
+	}
+
+	.brand img{
+		margin-right: 20px;
+		width: 40px;
+		height: 40px;
+	}
+
+	.brand span{
+		font-size: 25px;
+	}
+
+	.store-icon img {
+		width: 170px;
+	}
+
+	.store-icon.apple img {
+		width: 136px;
+	}
+}
+
+@media (min-width: 1292px){
+	.content{
+		width: 1016px;
+	}
+}
+
+@media (min-width: 1400px){
+	.content{
+		width: 1200px;
+	}
+}
