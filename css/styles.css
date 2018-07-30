@@ -333,6 +333,17 @@ header .content{
 	width: 100vw;
 }
 
+.hero.sub-page{
+	min-height: 400px;
+}
+
+.features-page{
+	background-image: url(../img/features-bg.png);
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: 60%;
+}
+
 @media (min-width: 374px){
 	.content{
 		width: 324px;
