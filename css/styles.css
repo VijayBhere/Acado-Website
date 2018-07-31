@@ -119,21 +119,22 @@ a.brand:hover{
 
 .menu-bar li{
 	padding: 0 10px;
+	display: flex;
+    align-items: center;
 }
 
 .menu-bar li > a{
-	line-height: 70px;
 	text-decoration: none;
 	color: white;
 }
 
 .button{
-	line-height: 30px;
     padding: 8px 15px;
     border-radius: 5px;
 	background-color: #e53935;
 	color: #ffffff !important;
 	box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.4);
+	display: inline-block;
 }
 
 .button.large{
@@ -166,7 +167,7 @@ section.hero{
 }
 
 .button-bar .button{
-	margin-right: 0px;
+	margin: 5px;
 }
 
 .hero h2{
@@ -337,10 +338,18 @@ footer{
 }
 
 .features-page{
-	background-image: url(../img/features-bg.png);
-	background-attachment: fixed;
+	/* background-image: url(../img/features-bg.png);
+	background-attachment: scroll;
 	background-size: cover;
-	background-position: 60%;
+	background-position: 60%; */
+}
+
+header{
+	background-color: #c1a8a8 !important;
+}
+
+section, footer{
+	display: none;
 }
 
 @media (min-width: 374px){
@@ -407,6 +416,10 @@ footer{
 	.hero .content{
 		padding: 60px 0;
 		text-align: left;
+	}
+
+	.hero p{
+		width: 50%;
 	}
 
 	.copy-content{
