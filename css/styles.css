@@ -50,6 +50,7 @@ section{
 
 .main-nav .content{
 	padding: 0;
+	width: 100vw;
 }
 
 .main-nav .nav-bar {
@@ -94,10 +95,7 @@ a.brand:hover{
 }
 
 .brand img{
-	margin-right: 20px;
-	width: 40px;
-	height: 40px;
-	margin-right: 10px;
+	margin-right: 5px;
 	width: 35px;
 	height: 35px;
 }
@@ -174,8 +172,6 @@ section.hero{
 .hero h2{
 	margin: 0;
 	margin-bottom: 20px;
-	width: 50%;
-	font-size: 35px;
 	width: 100%;
 	font-size: 25px;
 }
@@ -183,7 +179,6 @@ section.hero{
 .hero p{
 	font-size: 18px;
 	font-family: 'Open Sans', sans-serif;
-	width: 50%;
 	color: white;
 	font-size: 15px;
 	width: 100%;
@@ -199,6 +194,7 @@ section.hero{
 	margin-left: -10px;
 	margin-right: -10px;
 	display: block;
+	position: relative;
 }
 
 .grid-row.reverse{
@@ -257,7 +253,6 @@ section.hero{
 }
 
 .copy-content{
-	width: 50%;
 	width: 100%;
 }
 
@@ -314,28 +309,36 @@ footer{
 	justify-content: center;
 }
 
-.hero .content::before{
-	content:'';
+.image{
+	position: relative;
+    height: 285px;
+    width: 100%;
+	right: 0;
+	top: 0;
+	background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 50%;
 }
 
-.hero .content-image{
-	position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 50%;
-    right: 0;
-    margin: 80px 0;
+.image.user-data-image{
+	background-image: url(../img/all-user-data-at-one-place.png);
+}
+
+.image.hero-image{
 	background-image: url(../img/app-home-screen.png);
+    background-size: 130%;
+	margin-top: 10px;
+	height: 450px;
 	display: none;
-}
-
-header .content{
-	width: 100vw;
 }
 
 @media (min-width: 374px){
 	.content{
 		width: 324px;
+	}
+
+	.image.hero-image{
+		background-size: 98%;
 	}
 }
 
@@ -356,11 +359,34 @@ header .content{
 	.footer-content .brand{
 		justify-content: left;
 	}
+
+	.image.hero-image{
+		background-size: 68%;
+	}
 }
 
 @media (min-width: 718px){
-	header .content, .content{
+	.image{
+		width: 50%;
+    	height: 100% !important;
+    	position: absolute;
+	}
+	
+	.image.user-data-image{
+		background-size: 120%
+	}
+
+	.image.hero-image{
+		background-size: 110%;
+	}
+
+	.content{
 		width: 680px;
+	}
+
+	.main-nav .content{
+		padding-right: 0;
+    	padding-left: 0;
 	}
 
 	.nav-bar > .menu-bar{
@@ -374,14 +400,12 @@ header .content{
 
 	.copy-content{
 		width: 50%;
+		padding-left: 20px;
 	}
 
-	.hero p{
-		width: 50%;
-	}
-
-	.hero h2{
-		width: 50%;
+	.grid-row.reverse .copy-content{
+		padding-left: 0px;
+		padding-right: 20px;
 	}
 
 	.menu-icon{
@@ -390,8 +414,16 @@ header .content{
 }
 
 @media (min-width: 1024px){
-	header .content, .content{
+	.main-nav .content, .content{
 		width: 868px;
+	}
+
+	.image.user-data-image{
+		background-size: 90%
+	}
+
+	.image.hero-image{
+		background-size: 80%;
 	}
 
 	.hero p{
@@ -407,7 +439,6 @@ header .content{
 	}
 
 	.brand img{
-		margin-right: 20px;
 		width: 40px;
 		height: 40px;
 	}
@@ -426,13 +457,34 @@ header .content{
 }
 
 @media (min-width: 1292px){
-	header .content, .content{
+	.main-nav .content, .content{
 		width: 1016px;
+	}
+
+	.image.hero-image{
+		background-size: 60%;
+		background-position: 20%;
 	}
 }
 
 @media (min-width: 1400px){
-	header .content, .content{
+	.main-nav .content, .content{
 		width: 1200px;
+	}
+
+	.image.user-data-image{
+		background-size: 75%
+	}
+
+	.image.hero-image{
+		background-size: 50%;
+		background-position: 10%;
+	}
+}
+
+@media (min-width: 2000px){
+	.image.hero-image{
+		background-size: 45%;
+		background-position: 8%;
 	}
 }
