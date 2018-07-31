@@ -31,7 +31,7 @@
 					<span>Acado</span>
 				</a>
 				
-				<ul class="menu-bar">
+				<ul class="menu-bar screen-lg">
 					<li><a>HOME</a></li>
 					<li><a href="./features.html">FEATURES</a></li>
 					<li><a href="#">PRICING</a></li>
@@ -40,7 +40,24 @@
 					<li><a href="#" class="button">LOG IN</a></li>
 				</ul>
 
-				<span class="menu-icon"><i class="fas fa-bars"></i></span>
+				<ul class="menu-bar screen-sm">
+					<li><a href="#">LOG IN</a></li>
+					<li onclick="showMobileMenu()"><i class="fas fa-bars menu-icon"></i></li>
+				</ul>
+
+				<div id="floating-menu" class="floating-menu">
+					<div class="menu-header">
+						<div>MENU</div>
+						<i class="fas fa-times" onclick="hideMobileMenu()"></i>
+					</div>
+					<ul class="menu-bar">
+						<li><a>HOME</a></li>
+						<li><a href="./features.html">FEATURES</a></li>
+						<li><a href="#">PRICING</a></li>
+						<li><a href="#">CONTACT US</a></li>
+						<li class="register"><a href="#">REGISTER NOW</a></li>
+					</ul>
+				</div>
 			</nav>
 		</div>
 	</header>
@@ -49,9 +66,7 @@
 		<div class="content">
 			<p>APP FOR SCHOOL - PARENT COMMUNICATION</p>
 			<h2>Effective way to communicate<br/>with parents and students</h2>
-			<p>Schools use Acado to engage with parents and communicate essential information about their child and the school.</p>
-
-			<p>Register now and experience how Acado brings everything at your fingertips.</p>
+			<p>Schools use Acado to engage with parents, communicate essential information, and convey student's progress.</p>
 			<div class="button-bar">
 				<a class="button large">REGISTER NOW</a>
 				<a class="button large">REQUEST A DEMO</a>

@@ -24,23 +24,40 @@
 <body>
 	<header id='main-nav' class="main-nav">
 		<div class="content">
-			<nav class="nav-bar">
-				<a href="./index.html" class="brand" alt="Home">
-					<img src="./img/icon.png" alt="Acado">
-					<span>Acado</span>
-				</a>
-				
-				<ul class="menu-bar">
-					<li><a href="./index.html">HOME</a></li>
-					<li><a href="#">FEATURES</a></li>
-					<li><a href="#">PRICING</a></li>
-					<li><a href="#">CONTACT US</a></li>
-					<li><a href="#" class="button">REGISTER NOW</a></li>
-					<li><a href="#" class="button">LOG IN</a></li>
-				</ul>
-				
-				<span class="menu-icon"><i class="fas fa-bars"></i></span>
-			</nav>
+				<nav class="nav-bar">
+						<a href="./index.html" class="brand" alt="Home">
+							<img src="./img/icon.png" alt="Acado">
+							<span>Acado</span>
+						</a>
+						
+						<ul class="menu-bar screen-lg">
+							<li><a href="./index.html">HOME</a></li>
+							<li><a>FEATURES</a></li>
+							<li><a href="#">PRICING</a></li>
+							<li><a href="#">CONTACT US</a></li>
+							<li><a href="#" class="button">REGISTER NOW</a></li>
+							<li><a href="#" class="button">LOG IN</a></li>
+						</ul>
+		
+						<ul class="menu-bar screen-sm">
+							<li><a href="#">LOG IN</a></li>
+							<li onclick="showMobileMenu()"><i class="fas fa-bars menu-icon"></i></li>
+						</ul>
+		
+						<div id="floating-menu" class="floating-menu">
+							<div class="menu-header">
+								<div>MENU</div>
+								<i class="fas fa-times" onclick="hideMobileMenu()"></i>
+							</div>
+							<ul class="menu-bar">
+								<li><a href="./index.html">HOME</a></li>
+								<li><a>FEATURES</a></li>
+								<li><a href="#">PRICING</a></li>
+								<li><a href="#">CONTACT US</a></li>
+								<li class="register"><a href="#">REGISTER NOW</a></li>
+							</ul>
+						</div>
+					</nav>
 		</div>
 	</header>
 	
@@ -48,6 +65,10 @@
 		<div class="content">
 			<h2>Powerful features for better connectivity.</h2>
 			<p>Acado provides a complete set of features to support your day to day activites at school.</p>
+			<div class="button-bar">
+				<a class="button large">REGISTER NOW</a>
+				<a class="button large">REQUEST A DEMO</a>
+			</div>
 		</div>
 	</section>
 	

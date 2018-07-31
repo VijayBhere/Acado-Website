@@ -4,3 +4,11 @@ window.onscroll = function(){
     else
         document.getElementById('main-nav').className = 'main-nav';
 }
+
+var showMobileMenu = function(){
+    document.getElementById('floating-menu').className = 'floating-menu active';
+}
+
+var hideMobileMenu = function(){
+    document.getElementById('floating-menu').className = 'floating-menu';
+}
