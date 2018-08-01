@@ -205,6 +205,7 @@ a.brand:hover{
 	color: #ffffff !important;
 	box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.4);
 	display: inline-block;
+	cursor: pointer;
 }
 
 .button.large{
@@ -214,7 +215,7 @@ a.brand:hover{
 }
 
 .hero{
-	display: block;
+	display: flex;
 	position: relative;
 	min-height: 600px;
 	padding: 80px 0;
