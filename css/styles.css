@@ -200,7 +200,7 @@ a.brand:hover{
 
 .button{
     padding: 8px 15px;
-    border-radius: 2px;
+    border-radius: 5px;
 	background-color: #e53935;
 	color: #ffffff !important;
 	box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.4);
@@ -356,7 +356,7 @@ section.hero{
 }
 
 .centered{
-	text-align: center;
+	text-align: center !important;
 }
 
 footer{
@@ -408,19 +408,22 @@ footer{
 	min-height: 400px;
 }
 
-.features-page{
-	/* background-image: url(../img/features-bg.png);
+.pricing-page .copy-content{
+	width: 80%;
+	text-align: center !important;
+	margin: auto;
+	padding: 0 !important
+}
+
+.pricing-page .copy-content p{
+	font-size: 16px;
+}
+
+/* .features-page{
+	background-image: url(../img/features-bg.png);
 	background-attachment: scroll;
 	background-size: cover;
-	background-position: 60%; */
-}
-
-/* header{
-	background-color: #c1a8a8 !important;
-}
-
-section, footer{
-	display: none;
+	background-position: 60%;
 } */
 
 @media (min-width: 374px){
@@ -495,6 +498,11 @@ section, footer{
 
 	.hero p{
 		width: 50%;
+	}
+
+	.hero .content.centered p{
+		width: 80%;
+		margin: auto;
 	}
 
 	.copy-content{
