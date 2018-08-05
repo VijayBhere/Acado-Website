@@ -75,7 +75,7 @@ section{
     padding: 0;
 	height: 70px;
 	background-color: #c1a8a8;
-	background: linear-gradient(to right, #1bc5c7, #4daac1);
+	background: linear-gradient(to right, #d89f9f, #d27f7f);
 }
 
 .brand{
@@ -157,18 +157,21 @@ a.brand:hover{
 }
 
 .floating-menu .menu-bar li{
-	padding: 10px 0;
+	padding: 0;
 }
 
 .floating-menu .menu-bar a{
 	color: #5a5a5a;
 	font-weight: bold;
+	display: block;
+	width: 100%;
+	padding: 10px 0; 
 }
 
 .floating-menu .menu-bar li.register{
 	margin: 0 -20px -10px -20px;
 	background-color: #e53935;
-	padding: 20px 20px;
+	padding: 5px 20px;
 }
 
 .floating-menu .menu-bar li.register > a{
@@ -221,8 +224,9 @@ a.brand:hover{
 	min-height: 600px;
 	padding: 80px 0;
 	background-color: #c1a8a8;
-	/* background: linear-gradient(to right, #179a9c, #316977); */
+	background: linear-gradient(to right, #179a9c, #316977);
 	background: linear-gradient(to right, #1bc5c7, #4daac1);
+	background: linear-gradient(to right, #d89f9f, #d27f7f);
 	z-index: 1;
 	color: white;
 }
