@@ -75,6 +75,7 @@ section{
     padding: 0;
 	height: 70px;
 	background-color: #c1a8a8;
+	background: linear-gradient(to right, #1bc5c7, #4daac1);
 }
 
 .brand{
@@ -220,6 +221,8 @@ a.brand:hover{
 	min-height: 600px;
 	padding: 80px 0;
 	background-color: #c1a8a8;
+	/* background: linear-gradient(to right, #179a9c, #316977); */
+	background: linear-gradient(to right, #1bc5c7, #4daac1);
 	z-index: 1;
 	color: white;
 }
@@ -394,14 +397,21 @@ footer{
 }
 
 .image.user-data-image{
-	background-image: url(../img/app-home.png);
+	background-image: url(../img/all-user-data-at-one-place2.png);
+}
+
+.image.onboarding-image{
+	background-image: url(../img/hassle-free-onboarding.png);
+	height: 120px;
+    background-size: 100%;
 }
 
 .image.hero-image{
-	background-image: url(../img/app-home-screen.png);
-    background-size: 130%;
+	background-image: url(../img/app-home1.png);
+    background-size: contain;
 	margin-top: 10px;
 	height: 450px;
+	width: 100%;
 }
 
 .hero.sub-page{
@@ -420,20 +430,9 @@ footer{
 	font-size: 16px;
 }
 
-/* .features-page{
-	background-image: url(../img/features-bg.png);
-	background-attachment: scroll;
-	background-size: cover;
-	background-position: 60%;
-} */
-
 @media (min-width: 374px){
 	.content{
 		width: 324px;
-	}
-
-	.image.hero-image{
-		background-size: 98%;
 	}
 }
 
@@ -454,10 +453,6 @@ footer{
 	.footer-content .brand{
 		justify-content: left;
 	}
-
-	.image.hero-image{
-		background-size: 68%;
-	}
 }
 
 @media (min-width: 718px){
@@ -472,7 +467,12 @@ footer{
 	}
 
 	.image.hero-image{
-		background-size: 110%;
+		margin-top: 0;
+		background-size: 20%;
+		background-position: 80%;
+
+		background-size: 34%;
+		background-position: 92%;
 	}
 
 	.content{
@@ -540,7 +540,11 @@ footer{
 	}
 
 	.image.hero-image{
-		background-size: 80%;
+		background-size: 16%;
+		background-position: 80%;
+
+		background-size: 28%;
+		background-position: 85%;
 	}
 
 	.hero p{
@@ -577,14 +581,17 @@ footer{
 	}
 }
 
-@media (min-width: 1292px){
+@media (min-width: 1200px){
 	.main-nav .content, .content{
 		width: 1016px;
 	}
 
 	.image.hero-image{
-		background-size: 60%;
-		background-position: 20%;
+		background-size: 15%;
+		background-position: 75%;
+
+		background-size: 22%;
+		background-position: 78%;
 	}
 }
 
@@ -598,14 +605,27 @@ footer{
 	}
 
 	.image.hero-image{
-		background-size: 50%;
-		background-position: 10%;
+		background-size: 10%;
+		background-position: 70%;
+
+		background-size: 18%;
+		background-position: 74%;
 	}
 }
 
-@media (min-width: 2000px){
+@media (min-width: 1900px){
 	.image.hero-image{
-		background-size: 45%;
-		background-position: 8%;
+		background-size: 15%;
+		background-position: 68%;
+	}
+}
+
+@media (min-width: 2200px){
+	.image.hero-image{
+		background-size: 8%;
+		background-position: 64%;
+
+		background-size: 12%;
+		background-position: 66%;
 	}
 }
