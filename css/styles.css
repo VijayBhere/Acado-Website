@@ -400,6 +400,11 @@ footer{
     background-position: 50%;
 }
 
+.grid-row.reverse .image{
+	left: 0;
+	right: auto;
+}
+
 .image.user-data-image{
 	background-image: url(../img/all-user-data-at-one-place2.png);
 }
@@ -408,6 +413,22 @@ footer{
 	background-image: url(../img/hassle-free-onboarding.png);
 	height: 120px;
     background-size: 100%;
+}
+
+.image.work-seamlessly-image{
+	background-image: url(../img/work-seamlessly.png);
+}
+
+.image.reach-out-image{
+	background-image: url(../img/reach-out-with-ease.png);
+}
+
+.image.student-progress-image{
+	background-image: url(../img/convey-progress.png);
+}
+
+.image.fees-payment-image{
+	background-image: url(../img/fees-payment.png);
 }
 
 .image.hero-image{
