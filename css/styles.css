@@ -457,6 +457,15 @@ footer{
 	min-height: 400px;
 }
 
+.pricing-page .hero{
+	padding-bottom: 0;
+	min-height: 300px;
+}
+
+.pricing-page section .content{
+	padding: 50px 0
+}
+
 .pricing-page .copy-content{
 	text-align: center !important;
 	margin: auto;

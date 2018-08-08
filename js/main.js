@@ -1,14 +1,18 @@
 window.onscroll = function(){
-    if(document.documentElement.scrollTop > 10 || document.body.scrollTop > 10)
-        document.getElementById('main-nav').className = 'main-nav fixed-top';
-    else
-        document.getElementById('main-nav').className = 'main-nav';
+	var headerElement = document.getElementById('main-nav');
+	
+	if(document.documentElement.scrollTop > 10 || document.body.scrollTop > 10){
+		if(headerElement.className.indexOf('fixed-top') == -1)
+			headerElement.className = headerElement.className + ' fixed-top';
+	}
+	else
+		headerElement.className = headerElement.className.replace('fixed-top', '');
 }
 
 var showMobileMenu = function(){
-    document.getElementById('floating-menu').className = 'floating-menu active';
+	document.getElementById('floating-menu').className = 'floating-menu active';
 }
 
 var hideMobileMenu = function(){
-    document.getElementById('floating-menu').className = 'floating-menu';
+	document.getElementById('floating-menu').className = 'floating-menu';
 }
