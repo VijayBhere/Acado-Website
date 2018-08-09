@@ -345,7 +345,10 @@ section.hero{
 
 .copy-content{
 	width: 100%;
-	margin-bottom: 60px;
+}
+
+.copy-content:not(:first-child){
+	margin-top: 60px;
 }
 
 .copy-content:last-child{
@@ -504,6 +507,10 @@ footer{
 }
 
 @media (min-width: 718px){
+	.copy-content:not(:first-child){
+		margin-top: 0;
+	}
+
 	.image{
 		width: 50%;
     	height: 100% !important;
