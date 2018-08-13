@@ -412,7 +412,7 @@ footer{
     width: 100%;
 	right: 0;
 	top: 0;
-	background-size: 100%;
+	background-size: contain;
     background-repeat: no-repeat;
     background-position: 50%;
 }
@@ -449,7 +449,7 @@ footer{
 }
 
 .image.hero-image{
-	background-image: url(../img/app-home1.png);
+	background-image: url(../img/app-home.png);
     background-size: contain;
 	margin-top: 10px;
 	height: 450px;
@@ -523,6 +523,55 @@ footer{
 
 .emphasize{
 	font-weight: bold;
+}
+
+.feimg{
+	height: 500px;
+	background-size: contain;
+}
+
+.image.feimg.users{
+	background-image: url(../img/features/user-data.png);
+}
+
+.image.feimg.user-upload{
+	background-image: url(../img/features/upload-users.png);
+}
+
+.image.feimg.user-groups{
+	background-image: url(../img/features/user-groups.png);
+}
+
+.image.feimg.fees{
+	background-image: url(../img/features/fees.png);
+}
+
+.image.feimg.bulletin{
+	background-image: url(../img/features/bulletin.png);
+}
+
+.image.feimg.messages{
+	background-image: url(../img/features/chats.png);
+}
+
+.image.feimg.sms{
+	background-image: url(../img/features/sms.png);
+}
+
+.image.feimg.attendance{
+	background-image: url(../img/features/attendance.png);
+}
+
+.image.feimg.exam{
+	background-image: url(../img/features/exam-report.png);
+}
+
+.image.feimg.schedules{
+	background-image: url(../img/features/schedules.png);
+}
+
+.image.feimg.surveys{
+	background-image: url(../img/features/survey.png);
 }
 
 @media (min-width: 374px){
@@ -613,6 +662,13 @@ footer{
 		margin-bottom: 0;
 	}
 
+	.features-page .copy-content{
+		display: flex;
+		justify-content: center;
+		flex-flow: column;
+		min-height: 450px;
+	}
+
 	.grid-row.reverse .copy-content{
 		padding-left: 0px;
 		padding-right: 20px;
@@ -699,6 +755,10 @@ footer{
 	.image.hero-image{
 		background-size: 22%;
 		background-position: 78%;
+	}
+
+	.image.student-progress-image{
+		background-size: contain;
 	}
 }
 
