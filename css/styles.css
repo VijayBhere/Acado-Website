@@ -454,6 +454,10 @@ footer{
 	background-image: url(../img/fees-payment.png);
 }
 
+.image.flexibility-image{
+	background-image: url(../img/flexible.png);
+}
+
 .image.hero-image{
 	background-image: url(../img/app-home.png);
     background-size: contain;
